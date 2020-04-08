@@ -1,0 +1,29 @@
+{
+    "flowers": [
+        {
+            "id": 1,
+            "name": "Dandilion",
+            "color": "blue"
+          },
+          {
+            "id": 2,
+            "name": "Iris",
+            "color": "purple"
+          },
+          {
+            "id": 3,
+            "name": "Sunflower",
+            "color": "yellow"
+          },
+          {
+            "id": 4,
+            "name": "Tulip",
+            "color": "white"
+          },
+          {
+            "id": 5,
+            "name": "Lions Mane",
+            "color": "brown"
+          }
+    ]
+}
