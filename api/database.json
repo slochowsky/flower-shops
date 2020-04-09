@@ -32,35 +32,57 @@
             "name": "Flowers United",
             "city": "Jaxonville",
             "state": "Florida",
-            "address":"456 Five Dr"
+            "address": "456 Five Dr"
         },
         {
             "id": 2,
             "name": "Flowers Kidz",
             "city": "Nashville",
             "state": "Tenneesse",
-            "address":"97 West St."
+            "address": "97 West St."
         },
         {
             "id": 3,
             "name": "pedals",
             "city": "Atlanta",
             "state": "Georgia",
-            "address":"5th St."
+            "address": "5th St."
         },
         {
             "id": 4,
             "name": "Roses United",
             "city": "Lexington",
             "state": "Kentucky",
-            "address":"111 Pine Dr."
+            "address": "111 Pine Dr."
         },
         {
             "id": 5,
             "name": "Roses United",
             "city": "Lexington",
             "state": "Kentucky",
-            "address":"111 Pine Dr."
+            "address": "111 Pine Dr."
+        }
+    ],
+    "nurseries": [
+        {
+            "id": 1,
+            "name": "Roses are Red"
+        },
+        {
+            "id": 2,
+            "name": "Tulips Bulips"
+        },
+        {
+            "id": 3,
+            "name": "Flower thingy"
+        },
+        {
+            "id": 4,
+            "name": "Bluebells are Blue"
+        },
+        {
+            "id": 5,
+            "name": "Hydrangeas n stuff"
         }
     ],
     "retailers": [
@@ -105,31 +127,36 @@
             "distributorId": 1
         }
     ],
-        "retailersDistributors": [
-            {
-                "id": 1,
-                "retailerId": 1,
-                "distributorId": 1
-            },
-            {
-                "id": 2,
-                "retailerId": 2,
-                "distributorId": 5
-            },
-            {
-                "id": 3,
-                "retailerId": 3,
-                "distributorId": 3
-            },
-            {
-                "id": 4,
-                "retailerId": 4,
-                "distributorId": 4
-            },
-            {
-                "id": 5,
-                "retailerId": 4,
-                "distributorId": 2
-            }
-        ]
+    "nurseryDistributor": [
+        {
+            "id": 1,
+            "nurseryId": 1,
+            "distributorId": 1
+        },
+        {
+            "id": 2,
+            "nurseryId": 2,
+            "distributorId": 1
+        },
+        {
+            "id": 3,
+            "nurseryId": 3,
+            "distributorId": 2
+        },
+        {
+            "id": 4,
+            "nurseryId": 4,
+            "distributorId": 4
+        },
+        {
+            "id": 5,
+            "nurseryId": 5,
+            "distributorId": 3
+        },
+        {
+            "id": 1,
+            "nurseryId": 1,
+            "distributorId": 3
+        }
+    ]
 }
