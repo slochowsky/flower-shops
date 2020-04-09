@@ -4,7 +4,7 @@ const Flower = (flower) => {
         <header class="flower__header">
             <h1 class="flower__name"> ${flower.name}</h1>
         </header>
-        <article class="flower__info">
+        <article class="flower__traits">
             <div class="flower__color">${flower.color}</div>
         </article>
     </section>

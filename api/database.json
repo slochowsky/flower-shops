@@ -4,26 +4,63 @@
             "id": 1,
             "name": "Dandilion",
             "color": "blue"
-          },
-          {
+        },
+        {
             "id": 2,
             "name": "Iris",
-            "color": "purple"
-          },
-          {
+            "color": "purpley"
+        },
+        {
             "id": 3,
             "name": "Sunflower",
             "color": "yellow"
-          },
-          {
+        },
+        {
             "id": 4,
             "name": "Tulip",
             "color": "white"
-          },
-          {
+        },
+        {
             "id": 5,
-            "name": "Lions Mane",
-            "color": "brown"
-          }
+            "name": "Purple Lilly",
+            "color": "purple"
+        }
+    ],
+    "retailers": [
+        {
+            "id": 1,
+            "name": "FlowersRUS",
+            "city": "Ft. Myers",
+            "state": "Florida",
+            "address": "1234 Saint Street"
+        },
+        {
+            "id": 2,
+            "name": "Bingo",
+            "city": "Miami",
+            "state": "Florida",
+            "address": "1234 Walaby Way"
+        },
+        {
+            "id": 3,
+            "name": "Stemz",
+            "city": "Murfreesboro",
+            "state": "Tennessee",
+            "address": "1111 North Blvd"
+        },
+        {
+            "id": 4,
+            "name": "Rosey",
+            "city": "Arlington",
+            "state": "Georgia",
+            "address": "999 BOO Circle"
+        },
+        {
+            "id": 5,
+            "name": "Plant Based",
+            "city": "New York",
+            "state": "New Found",
+            "address": "9009th RD North"
+        }
     ]
 }
