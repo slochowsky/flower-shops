@@ -5,7 +5,7 @@ const flowerTarget = document.querySelector(".flowersList") //select the .flower
 
 const FlowerList = () => {
 
-    const flowers = useFlowers() // Alias flowers created to useFlowers array from our provider
+    const flowers = useFlowers() // flowers created to useFlowers array from our provider
     console.log("FLOWER ARRAY", flowers)
     //maping over flowers array with a function that takes the currently flower as a parameter and inserts it into the Flower function from Flower.js
     const render = () => {
