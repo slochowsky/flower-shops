@@ -20,18 +20,23 @@ const RetailerList = () => {
 
 
     const render = () => {
+        // Map over each retailer to find the distributor whose pk matches the distributor fk on the retailer object.
         retailerTarget.innerHTML = retailers.map(retailer => {
-
             const distributor = distributors.find(distributor => distributor.id === retailer.distributorId)
 
-           let nurseryDis = nurseryDistributors.filter(nd => nd.distributorId === distributor.id)
-
+        //filter out the objects from the entire nurseryDistributor array where
+        //the distributorId fk matches the pk on the distributor.
+            let nurseryDis = nurseryDistributors.filter(nd => nd.distributorId === distributor.id)
+        // Map over the new array that contains the objects from the nurseryDistributors join table 
+        // which match to the correct distributor
             const nursDisArray = nurseryDis.map(rd => {
-              return nurseries.find(nursery => nursery.id === rd.nurseryId)
+                // For each nurseryDistributor object, find the matching nursery object from the nurseries array 
+                // whose pk matches the nurseryDistributorId fk(returns the first match and continues this process until there is nothing to itterate over anymore.)
+                return nurseries.find(nursery => nursery.id === rd.nurseryId)
             })
-                return Retailer(retailer, distributor, nursDisArray)
+            return Retailer(retailer, distributor, nursDisArray)
 
-            }
+        }
         ).join("")
     }
     render()
