@@ -1,4 +1,5 @@
-const Retailer = (retailer) => {
+const Retailer = (retailer, distributor) => {
+    console.log("VALUE??", distributor)
     return `
     <section class="retailer__card">
         <header class="retailer__header">
@@ -8,6 +9,13 @@ const Retailer = (retailer) => {
             <div class="retailer__city">${retailer.city}</div>
             <div class="retailer__state">${retailer.state}</div>
             <div class="retailer__address">${retailer.address}</div>
+
+            <ol>
+                    ${
+                    distributor.map(distributors => `<li>${distributors.name}</li>`)
+                    .join("")
+                    }
+                </ol>
         </article>
     </section>
     `

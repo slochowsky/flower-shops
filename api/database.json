@@ -26,41 +26,110 @@
             "color": "purple"
         }
     ],
+    "distributors": [
+        {
+            "id": 1,
+            "name": "Flowers United",
+            "city": "Jaxonville",
+            "state": "Florida",
+            "address":"456 Five Dr"
+        },
+        {
+            "id": 2,
+            "name": "Flowers Kidz",
+            "city": "Nashville",
+            "state": "Tenneesse",
+            "address":"97 West St."
+        },
+        {
+            "id": 3,
+            "name": "pedals",
+            "city": "Atlanta",
+            "state": "Georgia",
+            "address":"5th St."
+        },
+        {
+            "id": 4,
+            "name": "Roses United",
+            "city": "Lexington",
+            "state": "Kentucky",
+            "address":"111 Pine Dr."
+        },
+        {
+            "id": 5,
+            "name": "Roses United",
+            "city": "Lexington",
+            "state": "Kentucky",
+            "address":"111 Pine Dr."
+        }
+    ],
     "retailers": [
         {
             "id": 1,
             "name": "FlowersRUS",
             "city": "Ft. Myers",
             "state": "Florida",
-            "address": "1234 Saint Street"
+            "address": "1234 Saint Street",
+            "distributorId": 1
         },
         {
             "id": 2,
             "name": "Bingo",
             "city": "Miami",
             "state": "Florida",
-            "address": "1234 Walaby Way"
+            "address": "1234 Walaby Way",
+            "distributorId": 2
         },
         {
             "id": 3,
             "name": "Stemz",
             "city": "Murfreesboro",
             "state": "Tennessee",
-            "address": "1111 North Blvd"
+            "address": "1111 North Blvd",
+            "distributorId": 3
         },
         {
             "id": 4,
             "name": "Rosey",
             "city": "Arlington",
             "state": "Georgia",
-            "address": "999 BOO Circle"
+            "address": "999 BOO Circle",
+            "distributorId": 4
         },
         {
             "id": 5,
             "name": "Plant Based",
             "city": "New York",
             "state": "New Found",
-            "address": "9009th RD North"
+            "address": "9009th RD North",
+            "distributorId": 1
         }
-    ]
+    ],
+        "retailersDistributors": [
+            {
+                "id": 1,
+                "retailerId": 1,
+                "distributorId": 1
+            },
+            {
+                "id": 2,
+                "retailerId": 2,
+                "distributorId": 5
+            },
+            {
+                "id": 3,
+                "retailerId": 3,
+                "distributorId": 3
+            },
+            {
+                "id": 4,
+                "retailerId": 4,
+                "distributorId": 4
+            },
+            {
+                "id": 5,
+                "retailerId": 4,
+                "distributorId": 2
+            }
+        ]
 }
