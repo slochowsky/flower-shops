@@ -52,7 +52,7 @@ const RetailerList = () => {
                     return flowers.find(flower => flower.id === nfr.flowerId)
                    
                 })
-                nursery.foundFlowerTACO = foundFlowerArray
+                nursery.foundFlower = foundFlowerArray
                 return nursery
             })
             return Retailer(retailer, distributor, nursDisArray, flowerArray)
