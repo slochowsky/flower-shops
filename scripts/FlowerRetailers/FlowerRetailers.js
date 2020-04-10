@@ -12,10 +12,10 @@ const Retailer = (retailer, distributor, nursDisArray, flowerArray) => {
             <ol>Distributor: ${distributor.name}</ol>
             ${nursDisArray.map(nursery => `<li> Nursery: ${nursery.name}</li>`).join("")}
 <br>
-            ${flowerArray.map(nursery => `
-            Nursery: ${nursery.name}--PRODUCTS: <ul>${nursery.foundFlowerArray.map(flower => `
-            <li>Type: ${flower.color} ${flower.name}</li>`).join("")}
-            </ul>`).join("")}
+            ${flowerArray.map(flower =>
+            `<div>Nursery's avalible flowers:</div>
+            ${flower.map(individualFlower => { return `<li>${individualFlower.name}</li>` }).join("")}`
+            ).join("")}
         </article>
     </section>
     `

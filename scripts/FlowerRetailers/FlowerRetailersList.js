@@ -50,10 +50,8 @@ const RetailerList = () => {
                     // For each nurseryFlower object, perform a find on the full flowers array from the fetch and compare the flower object id (pk)
                     //  to the flowerId (fk) on the nurseryFlower object
                     return flowers.find(flower => flower.id === nfr.flowerId)
-                   
                 })
-                nursery.foundFlowerArray = foundFlowerArray
-                return nursery
+                return foundFlowerArray
             })
             return Retailer(retailer, distributor, nursDisArray, flowerArray)
         }
