@@ -1,5 +1,5 @@
-const Retailer = (retailer, distributor, nursDisArray) => {
-    console.log("VALUE??", distributor)
+const Retailer = (retailer, distributor, nursDisArray, flowerArray) => {
+    console.log("VALUE??", distributor, flowerArray)
     return `
     <section class="retailer__card">
         <header class="retailer__header">
@@ -10,9 +10,12 @@ const Retailer = (retailer, distributor, nursDisArray) => {
             <div class="retailer__state">State: ${retailer.state}</div>
             <div class="retailer__address">Address: ${retailer.address}</div>
             <ol>Distributor: ${distributor.name}</ol>
-            ${nursDisArray.map(nursery => `<li> Nursery: ${nursery.name}</li>`)
-                .join("")
-                }
+            ${nursDisArray.map(nursery => `<li> Nursery: ${nursery.name}</li>`).join("")}
+<br>
+            ${flowerArray.map(nursery => `
+            Nursery: ${nursery.name}--PRODUCTS: <ul>${nursery.foundFlower.map(flower => `
+            <li>Type: ${flower.color} ${flower.name}</li>`).join("")}
+            </ul>`).join("")}
         </article>
     </section>
     `

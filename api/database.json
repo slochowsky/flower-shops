@@ -3,27 +3,27 @@
         {
             "id": 1,
             "name": "Dandilion",
-            "color": "blue"
+            "color": "Blue"
         },
         {
             "id": 2,
             "name": "Iris",
-            "color": "purpley"
+            "color": "While"
         },
         {
             "id": 3,
             "name": "Sunflower",
-            "color": "yellow"
+            "color": "Green"
         },
         {
             "id": 4,
             "name": "Tulip",
-            "color": "white"
+            "color": "Yellow"
         },
         {
             "id": 5,
-            "name": "Purple Lilly",
-            "color": "purple"
+            "name": " Lilly",
+            "color": "Orange"
         }
     ],
     "distributors": [
@@ -125,6 +125,58 @@
             "state": "New Found",
             "address": "9009th RD North",
             "distributorId": 1
+        }
+    ],
+    "flowerNurseries": [
+        {
+            "id": 1,
+            "nurseryId": 1,
+            "flowerId": 1
+        },
+        {
+            "id": 2,
+            "nurseryId": 1,
+            "flowerId": 5
+        },
+        {
+            "id": 3,
+            "nurseryId": 2,
+            "flowerId": 4
+        },
+        {
+            "id": 4,
+            "nurseryId": 2,
+            "flowerId": 2
+        },
+        {
+            "id": 5,
+            "nurseryId": 3,
+            "flowerId": 1
+        },
+        {
+            "id": 6,
+            "nurseryId": 3,
+            "flowerId": 3
+        },
+        {
+            "id": 7,
+            "nurseryId": 4,
+            "flowerId": 2
+        },
+        {
+            "id": 8,
+            "nurseryId": 4,
+            "flowerId": 1
+        },
+        {
+            "id": 9,
+            "nurseryId": 5,
+            "flowerId": 4
+        },
+        {
+            "id": 10,
+            "nurseryId": 5,
+            "flowerId": 5
         }
     ],
     "nurseryDistributor": [
